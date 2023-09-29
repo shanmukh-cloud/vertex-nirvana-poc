@@ -68,3 +68,38 @@ git checkout vertex-poc
 git branch vertex-poc
 git branch main
 git stash
+git stash
+git branch main
+git pull origin
+git config --global --list
+git push -u origin main
+sudo apt-get remove git
+git branch
+cd /usr/bin/git
+gcloud init
+gcloud build connections
+gh repo clone shanmukh-cloud/test
+gh auth login
+git branch
+git repo
+ls
+mkdir my_pipeline_project
+cd my_pipeline_project/
+vim hello_world.py
+ls
+git branch
+git checkout vertex-nirvana-poc
+git branch vertex-nirvana-branch
+git checkout vertex-nirvana-branch 
+git
+git branch
+ls
+cd ..
+ls
+git push
+git push --set-upstream origin vertex-nirvana-branch
+git branch
+git push
+git push origin
+git config
+git config global
