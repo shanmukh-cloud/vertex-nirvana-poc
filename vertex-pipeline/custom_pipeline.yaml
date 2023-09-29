@@ -1,0 +1,26 @@
+pipeline:
+  name: hello-world-pipeline
+  display_name: Hello World Pipeline
+
+components:
+  - name: hello-world
+    custom_container_spec:
+      container_spec:
+        image_uri: hello-world-image
+
+  - name: branch
+    custom_container_spec:
+      container_spec:
+        image_uri: branch-image
+    inputs:
+      - parameter_name: condition
+        value: True
+
+conditional-branches:
+  - name: branch-1
+    condition: '$.steps.hello-world.outputs.output is not null'
+    destination_step: branch
+
+  - name: branch-2
+    condition: '$.steps.hello-world.outputs.output is null'
+    destination_step: branch
